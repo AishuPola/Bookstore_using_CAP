@@ -7,7 +7,6 @@
     "applicationVersion": {
       "version": "0.0.1"
     },
-    "title": "{{appTitle}}",
     "description": "{{appDescription}}",
     "resources": "resources.json",
     "sourceTemplate": {
@@ -24,7 +23,8 @@
           "odataVersion": "4.0"
         }
       }
-    }
+    },
+    "title": "{{appTitle}}"
   },
   "sap.ui": {
     "technology": "UI5",
@@ -116,7 +116,8 @@
                     "type": "ResponsiveTable"
                   }
                 }
-              }
+              },
+              "initialLoad": "Enabled"
             }
           }
         },

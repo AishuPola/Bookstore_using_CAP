@@ -41,12 +41,12 @@ annotate service.Books with @(
     UI.LineItem : [
         {
             $Type : 'UI.DataField',
-            Label : 'title',
+            Label : 'Book name',
             Value : title,
         },
         {
             $Type : 'UI.DataField',
-            Label : 'genre',
+            Label : 'Genre',
             Value : genre,
         },
         {
@@ -64,6 +64,9 @@ annotate service.Books with @(
             Label : 'price',
             Value : price,
         },
+    ],
+    UI.SelectionFields : [
+        price,
     ],
 );
 
@@ -83,5 +86,9 @@ annotate service.Books with {
             },
         ],
     }
+};
+
+annotate service.Books with {
+    price @Common.Label : 'price'
 };
 
