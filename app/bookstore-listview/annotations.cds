@@ -48,7 +48,7 @@ annotate service.Books with @(
             $Type : 'UI.ReferenceFacet',
             Label : 'Chapters ',
             ID : 'Chapters',
-            Target : 'Chapters/@UI.LineItem#Chapters',
+            Target : 'Chapters/@UI.LineItem#Chapters1',
         },
     ],
     UI.LineItem : [
@@ -156,6 +156,23 @@ annotate service.Chapters with @(
             Value : book.pages,
             Label : 'pages',
         },
-    ]
+    ],
+    UI.LineItem #Chapters1 : [
+        {
+            $Type : 'UI.DataField',
+            Value : book.Chapters.title,
+            Label : 'Title of the Chapter',
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : book.Chapters.pages,
+            Label : 'Pages',
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : book.Chapters.number,
+            Label : 'Number',
+        },
+    ],
 );
 

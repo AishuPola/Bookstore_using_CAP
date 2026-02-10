@@ -6,7 +6,7 @@ using {
 namespace tutorial.db;
 
 entity Books : cuid, managed {
-        title       : String;
+        title      : String;
         author      : Association to Authors;
         genre       : String;
         publishedAt : Date;
